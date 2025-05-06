@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tomato Journey - From Farm to Table</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      border-radius: 0.5rem;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-green-100 to-yellow-100 font-sans">
+  <header class="text-center py-8">
+    <h1 class="text-4xl font-bold text-green-800">🍅 Tomato Journey: From Farm to Table</h1>
+    <p class="text-lg text-gray-700 mt-2">An interactive exploration of agricultural supply chains and sustainability</p>
+  </header>
+
+  <section class="max-w-4xl mx-auto px-4">
+    <!-- Timeline Navigation -->
+    <div class="flex justify-between text-center mb-10">
+      <a href="#harvest" class="text-sm text-green-700 hover:underline">🌾 Harvest</a>
+      <a href="#transport" class="text-sm text-green-700 hover:underline">🚛 Transport</a>
+      <a href="#test" class="text-sm text-green-700 hover:underline">🔬 Test</a>
+      <a href="#carbon" class="text-sm text-green-700 hover:underline">🌍 Carbon</a>
+      <a href="#display" class="text-sm text-green-700 hover:underline">🛒 Display</a>
+    </div>
+
+    <!-- Harvest -->
+    <section id="harvest" class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-green-900">🌾 Harvest</h2>
+      <div class="relative">
+        <video controls class="rounded-lg w-full">
+          <source src="harvest.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">Early morning harvest by local farmers, ensuring freshness and quality.</div>
+      </div>
+    </section>
+
+    <!-- Transport -->
+    <section id="transport" class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-green-900">🚛 Transport</h2>
+      <div class="relative">
+        <video controls class="rounded-lg w-full">
+          <source src="transport.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">Cold-chain transportation over 200km to retain freshness.</div>
+      </div>
+    </section>
+
+    <!-- Test -->
+    <section id="test" class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-green-900">🔬 Test</h2>
+      <div class="relative">
+        <video controls class="rounded-lg w-full">
+          <source src="test.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">Rigorous lab testing for pesticides and quality standards.</div>
+      </div>
+    </section>
+
+    <!-- Carbon -->
+    <section id="carbon" class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-green-900">🌍 Carbon Footprint</h2>
+      <div class="relative">
+        <video controls class="rounded-lg w-full">
+          <source src="carbon.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">Tracking emissions through each stage to promote greener agriculture.</div>
+      </div>
+    </section>
+
+    <!-- Display -->
+    <section id="display" class="mb-12">
+      <h2 class="text-2xl font-semibold mb-4 text-green-900">🛒 Display</h2>
+      <div class="relative">
+        <video controls class="rounded-lg w-full">
+          <source src="display.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">Final presentation in local markets and retail shelves.</div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Summary -->
+  <footer class="text-center bg-green-200 py-8 mt-16">
+    <h3 class="text-xl font-bold text-green-900 mb-2">Why this matters</h3>
+    <p class="text-gray-800 max-w-2xl mx-auto">
+      By following the journey of a single tomato, we reveal the invisible layers of effort, sustainability, and innovation in modern agriculture. Understanding this journey encourages consumers to make informed, conscious choices.
+    </p>
+  </footer>
+</body>
+</html>
